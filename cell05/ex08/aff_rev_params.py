@@ -5,7 +5,7 @@ def main():
     if len(lst) <= 2: # 1: script name, 2: 1st agrv
         print("none")
     else: 
-        for i in lst[1: ]:
+        for i in reversed(lst[1: ]):
             print(i)
 
 main()
