@@ -2,9 +2,12 @@
 import sys 
 def main():
     lst = sys.argv
-    check = str(input("What was the paremeter? "))
-    if lst[1] == check:
-        print("Good job!")
+    if len(lst) != 2:
+        print("none")
     else:
-        print("Nope, sorry...")
+        check = str(input("What was the paremeter? "))
+        if lst[1] == check:
+            print("Good job!")
+        else:
+            print("Nope, sorry...")
 main()
