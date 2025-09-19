@@ -3,8 +3,11 @@ import sys
 def main():
     #run on powershell with wsl
     lst = sys.argv
-    output = str(lst[1]).upper() #index 0 == script name
-    print(output)
+    if len(lst) != 2:
+        print("none")
+    else:
+        output = str(lst[1]).upper() #index 0 == script name
+        print(output)
 
 
 main()
